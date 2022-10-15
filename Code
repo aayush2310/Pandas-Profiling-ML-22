@@ -1,0 +1,13 @@
+//Used to automate univarate and bivariate analysis easily.A library needs to be installed.
+
+
+import pandas as pd
+df=pd.read_csv('train.csv')
+df.head()
+!pip install pandas-profiling
+
+from pandas_profiling import ProfileReport
+prof=ProfileReport(df)
+prof.to_file(output_file='output.htm')
+
+//A HTML file in  the same folder named "output.html" will get genereated where the whole analysis of data will be there.
