@@ -8,6 +8,6 @@ df.head()
 
 from pandas_profiling import ProfileReport
 prof=ProfileReport(df)
-prof.to_file(output_file='output.htm')
+prof.to_file(output_file='output.html')
 
 //A HTML file in  the same folder named "output.html" will get genereated where the whole analysis of data will be there.
